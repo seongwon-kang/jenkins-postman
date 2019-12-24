@@ -13,7 +13,7 @@ pipeline {
 
         stage("Test") {
             steps{
-                sh "newman newman/postman_collection --exitCode 1"
+                sh "newman run .\newman\postman_collection.json -r html" --exitCode 1
             }
             
         }
