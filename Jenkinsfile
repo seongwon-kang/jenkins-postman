@@ -23,15 +23,18 @@ pipeline {
                 sh "cat "
             }
         }
-    }
-    post {
-        publishHTML (target: [
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
-            keepAll: true,
-            reportDir: 'newman',
-            reportFiles: 'newman/*.html',
-            reportName: "Newman Report"
-        ])
+
+        stage("Results") {
+            steps {
+                publishHTML (target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: 'newman',
+                    reportFiles: 'newman/*.html',
+                    reportName: "Newman Report"
+                ])
+            }
+        }
     }
 }
