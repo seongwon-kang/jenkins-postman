@@ -33,7 +33,7 @@ pipeline {
                     alwaysLinkToLastBuild: false,
                     keepAll: true,
                     reportDir: 'newman',
-                    reportFiles: 'newman/newman_latest.html',
+                    reportFiles: 'newman_latest.html',
                     reportName: "Newman Report"
                 ])
             }
