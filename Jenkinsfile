@@ -26,6 +26,7 @@ pipeline {
 
         stage("Results") {
             steps {
+                sh "pwd"
                 sh "cp newman/`ls -Art newman | tail -n 1` newman/newman_latest.html"
                 publishHTML (target: [
                     allowMissing: false,
