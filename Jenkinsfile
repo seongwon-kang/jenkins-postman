@@ -13,11 +13,16 @@ pipeline {
         }
 
         stage("Test") {
-            sh "newman jenkins_demo.postman_collection --exitCode 1"
+            steps{
+                sh "newman jenkins_demo.postman_collection --exitCode 1"
+            }
+            
         }
 
         stage("Deploy") {
+            steps{
                 echo 'Deploying....'
+            }
         }
     }
 }
