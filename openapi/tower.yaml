@@ -1,0 +1,123 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Swagger Petstore
+  license:
+    name: MIT
+servers:
+  - url: http://petstore.swagger.io/v1
+paths:
+  /pets:
+    get:
+      summary: List all pets
+      operationId: listPets
+      tags:
+        - pets
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: A paged array of pets
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Pets"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Game:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 022db29c-d0e2-11e5-bb4c-60f81dca7676
+        players:
+          type: array
+          items:
+            type: object
+        round:
+          type: integer
+
+    Map:
+      type: object
+      properties:
+        towers:
+          type: array
+          items:
+            type: object
+            example: []
+        units:
+          type: array
+          items:
+            type: object
+            example: []
+        spawnPoints:
+          type: array
+          items:
+            type: object
+          example: "[{0,0}, {4,4}, {0,4}, {4,0}]"
+        width:
+          type: integer
+        height:
+          type: integer
+
+    Player:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 플레이어
+        id:
+          type: string
+          example: 022db29c-d0e2-11e5-bb4c-60f81dca7676
+        money:
+          type: integer
+          example: 10
+
+    Tower:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 타워
+        cost:
+          type: integer
+          example: 10
+        width:
+          type: integer
+          example: 1
+        height:
+          type: integer
+          example: 1
+        x:
+          type: integer
+        y:
+          type: integer
+        owner:
+          type: string
+          example: 022db29c-d0e2-11e5-bb4c-60f81dca7676
+
+    Unit:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 
+
+
