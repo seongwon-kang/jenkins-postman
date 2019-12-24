@@ -1,0 +1,357 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "55c983ae-c1da-4ed3-b6d5-c9a0a3902ac5"
+    },
+    "item": [
+      {
+        "id": "788f85ac-ae51-44ef-a719-ccd9948788c2",
+        "name": "naver main",
+        "request": {
+          "url": {
+            "query": [],
+            "variable": []
+          },
+          "method": "GET"
+        },
+        "response": [],
+        "event": []
+      }
+    ],
+    "event": [],
+    "protocolProfileBehavior": {},
+    "variable": [],
+    "info": {
+      "_postman_id": "55c983ae-c1da-4ed3-b6d5-c9a0a3902ac5",
+      "name": "naver example",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "934b5967-51ed-4f63-8bcb-1a26c699ba85",
+    "values": []
+  },
+  "globals": {
+    "id": "81f79c4a-eac2-4fb2-bb72-ae21f0a76f94",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 1
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 0,
+      "responseMin": 0,
+      "responseMax": 0,
+      "responseSd": 0,
+      "dnsAverage": 0,
+      "dnsMin": 0,
+      "dnsMax": 0,
+      "dnsSd": 0,
+      "firstByteAverage": 0,
+      "firstByteMin": 0,
+      "firstByteMax": 0,
+      "firstByteSd": 0,
+      "started": 1577165736944,
+      "completed": 1577165736962
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "45d35b22-7bd8-434d-912c-6eb8fcdd9781",
+          "httpRequestId": "1776840c-bd81-438f-910e-9d4eb51737f7"
+        },
+        "item": {
+          "id": "788f85ac-ae51-44ef-a719-ccd9948788c2",
+          "name": "naver main",
+          "request": {
+            "url": {
+              "query": [],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": []
+        },
+        "request": {
+          "url": {
+            "query": [],
+            "variable": []
+          },
+          "method": "GET"
+        },
+        "id": "788f85ac-ae51-44ef-a719-ccd9948788c2",
+        "requestError": {}
+      }
+    ],
+    "transfers": {
+      "responseTotal": 0
+    },
+    "failures": [
+      {
+        "error": {
+          "name": "Error",
+          "message": "runtime:extenstions~request: request url is empty",
+          "stack": "Error: runtime:extenstions~request: request url is empty\n    at Requester.request (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester.js:423:26)\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js:154:37\n    at Function.create (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester.js:502:16)\n    at RequesterPool.create (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester-pool.js:62:22)\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js:106:32\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1140:9\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:473:16\n    at replenish (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1006:25)\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1016:9\n    at _asyncMap (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1133:5)\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1219:16\n    at C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:1046:16\n    at Object.<anonymous> (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:240:20)\n    at Object.<anonymous> (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:74:12)\n    at Object.applyEachSeries (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js:245:23)\n    at PostmanCollectionRun.httprequest (C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js:57:19)",
+          "checksum": "32046dd0f71c3022dde348116b747cab",
+          "id": "c25773a7-e9e0-41d8-85dc-81fe9f633fdf",
+          "timestamp": 1577165736955,
+          "stacktrace": [
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester.js",
+              "lineNumber": 423,
+              "functionName": "Requester.request",
+              "typeName": "Requester",
+              "methodName": "request",
+              "columnNumber": 26,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js",
+              "lineNumber": 154,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 37,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester.js",
+              "lineNumber": 502,
+              "functionName": "Function.create",
+              "typeName": "Function",
+              "methodName": "create",
+              "columnNumber": 16,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\requester\\requester-pool.js",
+              "lineNumber": 62,
+              "functionName": "RequesterPool.create",
+              "typeName": "RequesterPool",
+              "methodName": "create",
+              "columnNumber": 22,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js",
+              "lineNumber": 106,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 32,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1140,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 9,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 473,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 16,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1006,
+              "functionName": "replenish",
+              "typeName": "Object",
+              "methodName": null,
+              "columnNumber": 25,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1016,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 9,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1133,
+              "functionName": "_asyncMap",
+              "typeName": "Object",
+              "methodName": null,
+              "columnNumber": 5,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1219,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 16,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 1046,
+              "functionName": null,
+              "typeName": null,
+              "methodName": null,
+              "columnNumber": 16,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 240,
+              "functionName": "",
+              "typeName": "Object",
+              "methodName": null,
+              "columnNumber": 20,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 74,
+              "functionName": "",
+              "typeName": "Object",
+              "methodName": null,
+              "columnNumber": 12,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\node_modules\\async\\dist\\async.js",
+              "lineNumber": 245,
+              "functionName": "Object.applyEachSeries",
+              "typeName": "Object",
+              "methodName": "applyEachSeries",
+              "columnNumber": 23,
+              "native": false
+            },
+            {
+              "fileName": "C:\\Users\\tta\\AppData\\Roaming\\npm\\node_modules\\newman\\node_modules\\postman-runtime\\lib\\runner\\extensions\\http-request.command.js",
+              "lineNumber": 57,
+              "functionName": "PostmanCollectionRun.httprequest",
+              "typeName": "PostmanCollectionRun",
+              "methodName": "httprequest",
+              "columnNumber": 19,
+              "native": false
+            }
+          ]
+        },
+        "at": "request",
+        "source": {
+          "id": "788f85ac-ae51-44ef-a719-ccd9948788c2",
+          "name": "naver main",
+          "request": {
+            "url": {
+              "query": [],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": []
+        },
+        "parent": {
+          "_": {
+            "postman_id": "55c983ae-c1da-4ed3-b6d5-c9a0a3902ac5"
+          },
+          "item": [
+            {
+              "id": "788f85ac-ae51-44ef-a719-ccd9948788c2",
+              "name": "naver main",
+              "request": {
+                "url": {
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": []
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {},
+          "variable": [],
+          "info": {
+            "_postman_id": "55c983ae-c1da-4ed3-b6d5-c9a0a3902ac5",
+            "name": "naver example",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+          }
+        },
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "45d35b22-7bd8-434d-912c-6eb8fcdd9781",
+          "httpRequestId": "1776840c-bd81-438f-910e-9d4eb51737f7"
+        }
+      }
+    ],
+    "error": null
+  }
+}

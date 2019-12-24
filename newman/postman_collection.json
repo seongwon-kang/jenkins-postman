@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "55c983ae-c1da-4ed3-b6d5-c9a0a3902ac5",
+		"name": "naver example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "naver main",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.naver.com",
+					"host": [
+						"www",
+						"naver",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "daum main",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.daum.net",
+					"host": [
+						"www",
+						"daum",
+						"net"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

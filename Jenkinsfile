@@ -1,5 +1,5 @@
 String cron_string = BRANCH_NAME == "master" ? "@hourly" : ""
-
+//Required Plugins: Pipeline, HTML Publisher
 pipeline {
     agent any
     triggers { cron(cron_string) }
@@ -7,22 +7,31 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                sh "npm install -g newman"
                 echo "Building..."
             }
         }
 
         stage("Test") {
             steps{
-                sh "newman jenkins_demo.postman_collection --exitCode 1"
+                sh "newman newman/postman_collection --exitCode 1"
             }
             
         }
 
         stage("Deploy") {
             steps{
-                echo 'Deploying....'
+                sh "cat "
             }
         }
+    }
+    post {
+        publishHTML (target: [
+            allowMissing: false,
+            alwaysLinkToLastBuild: false,
+            keepAll: true,
+            reportDir: 'newman',
+            reportFiles: 'newman/*.html',
+            reportName: "Newman Report"
+        ])
     }
 }
