@@ -1,13 +1,18 @@
 {
     "request": {
         "method": "GET",
-        "url": "/some/thing"
+        "url": "rest/JejuFolksongService/getJejuFolksongList",
+        "queryParameters": {
+            "startPage": "1",
+            "pageSize": "10",
+            "authApiKey": ""
+        }
     },
     "response": {
         "status": 200,
-        "body": "Hello world!",
         "headers": {
-            "Content-Type": "text/plain"
-        }
+            "Content-Type": "application/json"
+        },
+        "body": "{resultCode:\nresultMsg:success\npageIndex:\n0\npageSize:10\nstartPage:1\ntotalCount:2077\ntype:\"랩 민요\"\nname:\"이어도사나\nHey-yo\"\nminute:3}"
     }
 }
